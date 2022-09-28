@@ -28,13 +28,13 @@ useEffect(()=>{
       <Header searchterm={searchTerm} setsearchterm={setSearchTerm} moviesearch={moviesearch}/>
       {
     movie?.length > 0 ? (
-      <div className='container mx-auto flex flex-row flex-wrap p-10 gap-14 justify-center items-center'>
+      <div className='container mx-auto flex flex-row flex-wrap p-10 gap-14 justify-center items-center h-full'>
       {movie.map((mov)=>(
           <Movie movie={mov} />
       )
       )}
       </div>)
-    : (<div className=''>No movies found</div>)
+    : (<div className='text-7xl font-bold text-gray-700 text-center h-screen pt-20'>No movies found</div>)
   }
     </div>
   )
